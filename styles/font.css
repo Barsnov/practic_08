@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Blackbill";
+    src: url(../fonts/Blackbill_Demo.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url(../fonts/Righteous-Regular.ttf);
+    font-style: normal;
+}

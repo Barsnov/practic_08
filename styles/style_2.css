@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2 ?family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 &family=Робот: итальянский,wight@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(font.css);
+@import url(style.css);
+
+*{
+    font-family: "Roboto", "Open Sans";
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.web_site{
+    width: -webkit-fill-available; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: black;
+}
+
+.web_site header{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.web_site header .section{
+    display: flex;
+    align-items: center;
+}
+
+.web_site header .section img.basket{
+    margin-right: 2rem;
+}
+
+.web_site header .section img.basket:hover{
+    cursor: pointer;
+}
+
+.web_site header .section .prof{
+    display: flex;
+    align-items: center;
+}
+
+.web_site header .section .prof .ball{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    
+    margin-right: 1.5rem;
+}
+
+.web_site header .section img:hover{
+    cursor: pointer;
+}
+
+.web_site header .section .prof h4{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.web_site header .search{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 1px solid #FBEF7A;
+}
+
+.web_site header .search input{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    width: 50rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+.web_site header .search input:focus{
+    outline: 0 !important;
+}
+
+.web_site header .search img{
+    margin-left: 2rem;
+    width: 1.5rem;
+    transition: .4s;
+}
+
+.web_site header .search img:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:471px) {
+    .web_site{
+        padding: 1rem;
+    }
+    
+    .web_site header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .web_site header img{
+        order: 0;
+        width: 15rem;
+    }
+
+    .web_site header .search{
+        order: 2;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .web_site header .search input{
+        margin: 0;
+        padding: 0;
+    }
+
+    .web_site header .search img{
+        order: 3;
+    }
+
+    .web_site header .section{
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 2rem;
+        order: 1;
+    }
+
+    .web_site header .section img.basket{
+        width: 2rem;
+    }
+    .web_site header .section img{
+        width: 1.5rem;
+    }
+
+    .web_site header .section .prof .ball{
+        margin-right: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .web_site header .section .prof .ball img{
+        width: 2rem;
+    }
+
+    .web_site header .section .prof h4{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+.web_site .content{
+    padding: 5rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 6rem;
+    background-color: #FBEF7A;
+    transition: .4s;
+}
+
+.web_site .content .inf{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+
+.web_site .content .inf h3{
+    font-size: 3rem;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.web_site .content .inf .executor{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+
+.web_site .content .inf .executor:hover{
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.web_site .content .inf .executor h4{
+    margin-left: 2rem;
+    font-size: 3.25rem;
+    font-family: 'Blackbill';
+    transition: .4s;
+}
+
+.web_site .content .sort{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+
+.web_site .content .sort p{
+    font-size: 2rem;
+    transition: .4s;
+}
+
+.web_site .content .sort select#sort{
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.web_site .content .disco{
+    margin-top: 3rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.web_site .content .disco h3{
+    font-family: 'Righteous';
+    font-size: 2.75rem;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog{
+    margin-right: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .section_catalog{
+    display: flex;
+    transition: .5s;
+}
+
+
+.web_site .frame{
+    margin-top: 0;
+    margin-right: 5rem;
+    height: auto;
+    transition: .5s;
+}
+
+.web_site .frame .vinyl{
+    animation: none;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .most_popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .most_popular h3{
+    font-family: 'Blackbill';
+    font-size: 4rem;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .most_popular img.vinyl{
+    width: 32rem;
+    animation: vinyl 20s linear infinite;
+    transition: .5s;
+}
+
+@keyframes vinyl{
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.web_site .content .disco .catalog .most_popular h4{
+    font-family: 'Blackbill';
+    font-size: 3rem;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .most_popular h3.actor{
+    font-family: 'Blackbill';
+    font-size:3.5rem;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.web_site .content .disco .catalog .most_popular img.abs{
+    position: absolute;
+    left: 10rem;
+    top: 25rem;
+    transition: .5s;
+}
+
+
+@media only screen and (max-width:471px) {
+    .web_site .content{
+        margin-top: 4rem;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .web_site .content .inf{
+        width: 100%;
+    }
+
+    .web_site .content .inf h3{
+        font-size: 1.5rem;
+    }
+
+    .web_site .content .inf .executor{
+        margin-left: 1rem;
+    }
+
+    .web_site .content .inf .executor img{
+        margin-left: 0;
+        width: 8rem;
+    }
+
+    .web_site .content .inf .executor h4{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .web_site .content .sort{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .web_site .content .sort p{
+        font-size: 1.5rem;
+    }
+
+    .web_site .content .sort select#sort{
+        padding: 1rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .web_site .content .sort select#sort option{
+        font-size: 1rem;
+    }
+
+    .web_site .content .disco{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .web_site .content .disco h3{
+        font-size: 2rem;
+    }
+
+    .web_site .content .disco .catalog{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web_site .content .disco .catalog .section_catalog{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame{
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl{
+        width: auto;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl img{
+        width: 5rem;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl h5{
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular{
+        margin-top: 2rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular h3{
+        font-size: 2rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular h4{
+        font-size: 1.2rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular img.vinyl{
+        width: 20rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular img.abs{
+        width: 15rem;
+        left: 6rem;
+        top: 14rem;
+    }
+    .web_site .content .disco .catalog .most_popular h3.actor{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media only screen and (max-width:411px) {
+    .web_site header{
+        margin-top: 1rem;
+    }
+
+    .web_site header img.basket{
+        width: 10rem;
+    }
+
+    .web_site header .section img.basket{
+        width: 1.5rem;
+    }
+
+    .web_site header .section .prof .ball{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .web_site header .section .prof .ball img{
+        width: 1.5rem;
+    }
+
+    .web_site header .section .prof h4{
+        font-size: 1rem;
+    }
+
+    .web_site header .section .prof img{
+        width: 1rem;
+    }
+
+    .web_site header .search{
+        margin-top: 2rem;
+    }
+
+    .web_site header .search input{
+        font-size: 1rem;
+    }
+
+    .web_site header .search img{
+        width: 1rem;
+    }
+
+
+    .web_site .content .inf h3{
+        font-size: 1rem;
+    }
+
+    .web_site .content .inf .executor{
+        margin-left: 0;
+    }
+
+    .web_site .content .inf .executor img{
+        width: 6rem;
+    }
+    
+    .web_site .content .sort{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .web_site .content .sort p{
+        font-size: 1rem;
+    }
+
+    .web_site .content .sort select#sort{
+        padding: .7rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .web_site .content .sort select#sort option{
+        font-size: 1rem;
+    } 
+
+    .web_site .content .disco h3{
+        font-size: 1.75rem;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl{
+        width: 5rem;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl img{
+        width: 4rem;
+    }
+
+    .web_site .content .disco .catalog .section_catalog .frame .vinyl h5{
+        width: auto;
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width:371px) {
+
+    
+
+
+    .web_site header .search{
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .web_site header .search input{
+        font-size: 0.75rem;
+    } 
+    
+    .web_site .content{
+        margin-top: 2rem;
+    }
+
+    .web_site .content .inf h3{
+        font-size: 0.75rem;
+        width: 7rem;
+    }
+
+
+    .web_site .content .inf .executor img{
+        width: 5rem;
+    }
+
+    .web_site .content .inf .executor h4{
+        font-size: 0.75rem;
+    }
+
+    .web_site .content .sort{
+        margin-top: 1rem; 
+        justify-content: space-between
+    }
+
+    .web_site .content .sort p{
+        font-size: 0.75rem;
+    }
+
+    .web_site .content .sort select#sort{
+        padding: .5rem;
+        margin-left: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular h3{
+        font-size: 1.5rem;
+    }
+    
+    .web_site .content .disco .catalog .most_popular h4{
+        font-size: 0.7rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular h3.actor{
+        font-size: 1rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular img.vinyl{
+        width: 15rem;
+    }
+
+    .web_site .content .disco .catalog .most_popular img.abs{
+        width: 10rem;
+        top: 10rem;
+        transition: .4s;
+    }
+}
+
+
+
+.web_site .footer{
+    margin-top: 5rem;
+    border-radius: 5rem 5rem 0 0;
+    padding: 2rem 5rem;
+    background-color: #9747FF;
+}
+
+.web_site h3.h3_footer{
+    margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width:471px) {
+    .web_site .footer{
+        width: 100%;
+        padding: 2rem 1rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+}
+
+@media only screen and (max-width:350px) {
+    .web_site .footer{
+        padding: 1rem 0.5rem;
+    }
+
+    .web_site .footer .links{
+        margin-right: 1rem;
+    }
+
+    .web_site h3.h3_footer{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}

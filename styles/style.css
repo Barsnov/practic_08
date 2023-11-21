@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2 ?family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 &family=Робот: итальянский,wight@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(font.css);
+
+*{
+    font-family: "Roboto", "Open Sans";
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing{
+    width: -webkit-fill-available; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: black;
+}
+
+.landing .landing_page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBEF7A;
+    padding-bottom: 4rem;
+    border-radius: 0 0 6.25rem 6.25rem;
+    z-index: 1;
+}
+
+.landing .landing_page .section_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3.125rem 1.5rem 3.125rem;
+    background-color: black;
+    border-radius: 0 0 6.25rem 6.25rem;
+}
+
+.landing .landing_page .section_header img:hover{
+    cursor: pointer;
+}
+
+.landing .landing_page .section_header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.landing .landing_page .section_header .menu a{
+    color: #FBEF7A;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.4s ease-out;
+    border-bottom: 1px solid transparent;
+}
+
+.landing .landing_page .section_header .menu a:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #FBEF7A;
+    transition: 0.4s ease-out;
+}
+
+.landing .landing_page .section_header .menu a.register{
+    font-size: 1.5rem;
+    color: black;
+    width: 16.25rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    background-color: #FBEF7A;
+}
+
+.landing .landing_page a.register{
+    font-size: 1.5rem;
+    color: black;
+    background-color: #FBEF7A;
+    border: 1px transparent;
+    width: 16.25rem;
+    height: 4.375rem;
+    border-radius: calc(4.375rem/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    transition: 0.4s ease-out;
+}
+
+.landing .landing_page a.register:hover{
+    background-color: transparent;
+    border: 1px solid #FBEF7A;
+    color: #FBEF7A;
+    transition: 0.4s ease-out;
+}
+
+@media only screen and (max-width:471px) {
+    .landing{
+        width: -webkit-fill-available;
+    }
+
+    .landing .landing_page{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .landing .landing_page .section_header{
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .landing .landing_page .section_header .menu{
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+
+    .landing .landing_page .section_header .register{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:431px) {
+    .landing .landing_page .section_header .menu a{
+        font-size: 1rem;
+    }
+
+    .landing .landing_page .section_header a.register{
+        margin-top: 2rem;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+
+.landing .landing_page .landing_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3.75rem;
+}
+
+.landing .landing_page .landing_info .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.landing .landing_page .landing_info .info h1{
+    font-family: "Blackbill";
+    font-size: 9.125em;
+    font-style: normal;
+}
+
+
+.landing .landing_page .landing_info .info .two_tables{
+    display: flex;
+    align-items: center;
+}
+
+.landing .landing_page .landing_info .info .two_tables p.free{
+    font-family: "Righteous";
+    font-size: 2.125rem;
+    font-style: normal;
+    padding-left: 1rem;
+}
+
+
+.landing .landing_page .landing_info .info p{
+    font-size: 1.5rem;
+    width: 30rem;
+    margin-top: 1rem;
+}
+
+.landing .landing_page .landing_info .info a.register{
+    margin-top: 2rem;
+    background-color: black;
+    color: #FBEF7A;
+}
+
+.landing .landing_page .landing_info .info a.register:hover{
+    background-color: #FBEF7A;
+    border-color: black;
+    color: black;
+}
+
+
+@media only screen and (max-width:471px) {
+    .landing .landing_page .landing_info{
+        padding-top: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .landing .landing_page .landing_info .info{
+        align-items: center;
+    }
+
+    .landing .landing_page .landing_info .info h1{
+        font-size: 6rem;
+    }
+
+    .landing .landing_page .landing_info .info .two_tables{
+        margin-top: 1rem;
+    }
+
+    .landing .landing_page .landing_info .info .two_tables p.free{
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .landing .landing_page .landing_info .info .two_tables img{
+        width: 7rem;
+    }
+
+    .landing .landing_page .landing_info .info p{
+        width: auto;
+        text-align: center;
+    }
+
+    .landing .landing_page .landing_info .info a.register{
+        margin-top: 1rem;
+    }
+
+    .landing .landing_page .landing_info .info p{
+        font-size: 1rem;    
+    }
+
+}
+
+@media only screen and (max-width:431px) {
+    .landing .landing_page .landing_info .info a.register{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        margin-top: .5rem;
+    }
+}
+
+@media only screen and (max-width:391px) {
+    .landing .landing_page .landing_info .info .two_tables{
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .landing .landing_page .landing_info .info h1{
+        font-size: 4.5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .info .two_tables img{
+        width: 4rem;
+        transition: 0.4s;
+    }
+
+    .landing .landing_page .landing_info .info .two_tables p.free{
+        font-size: 1.2rem;
+        margin: 0;
+        transition: 0.4s;
+    }
+
+    .landing .landing_page .landing_info .info p{
+        margin: 0.5rem;
+    }
+
+}
+
+
+.landing .landing_page .landing_info .record{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65rem;
+}
+
+
+.landing .landing_page .landing_info .record .release{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37.5rem;
+    height: 55rem;
+}
+
+.landing .landing_page .landing_info .record .release img{
+    animation: disk 20s linear infinite
+}
+
+@keyframes disk {
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.landing .landing_page .landing_info .record .release h3{
+    font-family: "Blackbill";
+    font-size: 4.25rem;
+}
+
+.landing .landing_page .landing_info .record .release h4{
+    font-family: "Blackbill";
+    font-size: 2.75rem;
+}
+
+.landing .landing_page .landing_info .record .release h3.actor{
+    text-decoration: underline;
+    font-size: 3.50rem;
+}
+
+.landing .landing_page .landing_info .record .disco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing .landing_page .landing_info .record .disco h4{
+    font-family: "Righteous";
+    font-size: 2.75rem;
+}
+
+.frame{
+    margin-top: 1rem;
+    width: 15rem;
+    height: 47.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;    
+}
+
+.frame .vinyl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+    position: relative;
+    animation: disco 6s linear infinite alternate;
+}
+
+.frame .vinyl:hover{
+    cursor: pointer;
+}
+
+
+@keyframes disco{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: -8rem;
+    }
+}
+
+
+.frame .vinyl h5{
+    font-family: "Righteous";
+    font-size: 1.5rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.frame .vinyl h5.year{
+    opacity: 70%;
+}
+
+
+@media only screen and (max-width:471px) {
+    .landing .landing_page .landing_info .record{
+        margin-top: 2rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .landing .landing_page .landing_info .record .release{
+        width: 100%;
+        height: 100%;
+    }
+
+    .landing .landing_page .landing_info .record .release h3{
+        font-size: 2.5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .release h4{
+        font-size: 1.5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .release h3.actor{
+        font-size: 2rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .release img{
+        width: 15rem;
+        transition: .4s;
+    }
+    .landing .landing_page .landing_info .record .disco{
+        margin-top: 1.5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .disco h4{
+        font-size: 1.5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame{
+        width: 10rem;
+        height: 21rem;
+        transition: .4s;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame .vinyl h5{
+        font-size: 0.7rem;
+        transition: .4s;
+    } 
+
+    .landing .landing_page .landing_info .record .disco .frame .vinyl img{
+        width: 4rem;
+        transition: .4s;
+    }
+}
+
+
+@media only screen and (max-width:431px) {
+    .landing .landing_page .landing_info .record .release h3{
+        font-size: 2rem;
+    }
+
+    .landing .landing_page .landing_info .record .release h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .landing .landing_page .landing_info .record .release h3.actor{
+        font-size: 1.5rem;
+    }
+
+    .landing .landing_page .landing_info .record .release img{
+        width: 12rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco{
+        margin-top: 1rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco{
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width:361px){
+    .landing .landing_page .landing_info .record{
+        margin-top: 1rem;
+    }
+
+    .landing .landing_page .landing_info .record .release h3{
+        font-size: 1.5rem;
+    }
+
+    .landing .landing_page .landing_info .record .release h4{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .landing .landing_page .landing_info .record .release h3.actor{
+        font-size: 1rem;
+    }
+
+    .landing .landing_page .landing_info .record .release img{
+        width: 10rem;
+    }
+    
+    .landing .landing_page .landing_info .record .disco{
+        height: 15rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco h4{
+        font-size: 1rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame{
+        width: 7rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame .vinyl{
+        margin-top: 0.5rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame .vinyl img.albom{
+        width: 3rem;
+    }
+
+    .landing .landing_page .landing_info .record .disco .frame .vinyl h5{
+        font-size: 0.5rem;
+    }
+}
+
+
+.landing .landing_part_two{
+    background-color: #9747FF;
+    height: 60rem;
+    border-radius: 0 0 6.25rem 6.25rem;
+    width: 100%;
+    margin-top: -6.5rem;
+    padding-top: 9rem;
+    z-index: 0;
+    position: relative;
+}
+
+.landing .landing_part_two h2{
+    font-family: "Blackbill";
+    font-size: 6.75rem;
+    color: white;
+    position: absolute;
+    left: 75rem;
+    rotate: -20deg;
+    top: 50rem;
+    z-index: 4;
+}
+
+.landing .landing_part_two .line_vinyl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing .landing_part_two .line_vinyl .vinil{
+    display: flex;
+    position: absolute;
+    
+    animation-name: alboms-one; /*Имя анимации*/
+    animation-duration: 20s; /*Время анимации*/
+    animation-timing-function: linear; /*Вид анимации*/
+    animation-iteration-count: infinite; /*Кол-во анимации*/
+    /* animation-direction: alternate; Варианты развития анимации*/
+}
+
+.landing .landing_part_two .line_vinyl .vinil:hover{
+    animation-play-state: paused;
+}
+
+@keyframes alboms-one{
+    0%{
+        left: -10rem;;
+    }
+    
+    50%{
+        left: -70rem;
+    }
+
+    90%{
+        left: 0;
+    }
+
+    100%{
+        left: -10rem;
+    }
+}
+
+
+@keyframes alboms-two{
+    0%{
+        left: -50rem;;
+    }
+    
+    20%{
+        left: -70rem;
+    }
+
+    70%{
+        left: 0;
+    }
+
+    100%{
+        left: -50rem;
+    }
+}
+
+
+.landing .landing_part_two .line_vinyl .vinil .albom{
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.landing .landing_part_two .line_vinyl .vinil .albom img{
+    margin-top: 1rem;
+}
+
+.landing .landing_part_two .line_vinyl .vinil .albom:hover{
+    cursor: pointer;
+}
+
+.landing .landing_part_two .line_vinyl .vinil .albom h4{
+    font-family: "Righteous";
+    font-size: 1.2rem;
+}
+
+.landing .landing_part_two .line_vinyl.two .vinil{
+    display: flex;
+    position: absolute;
+    
+    animation-name: alboms-two; /*Имя анимации*/
+    animation-duration: 15s; /*Время анимации*/
+    animation-timing-function: linear; /*Вид анимации*/
+    animation-iteration-count: infinite; /*Кол-во анимации*/
+    /* animation-direction: alternate; Варианты развития анимации*/
+}
+
+.landing .landing_part_two .line_vinyl.three .vinil{
+    display: flex;
+    position: absolute;
+
+    animation-direction: reverse; /*Варианты развития анимации*/
+    animation-delay: 3s;
+}
+
+@media only screen and (max-width:471px) {
+    .landing .landing_part_two{
+        border-radius: 0 0 2rem 2rem;
+        padding-top: 7rem;
+        height: auto;
+    }
+
+    .landing .landing_part_two h2{
+        font-size: 3rem;
+        left: 9rem;
+        top: 33rem;
+    }
+
+    .landing .landing_part_two .line_vinyl{
+        height: 10rem;
+        transition: .4s;
+    }
+
+    .landing .landing_part_two .line_vinyl .vinil .albom img{
+        width: 5rem;
+        transition: .4s;
+    }
+
+    .landing .landing_part_two .line_vinyl .vinil .albom h4{
+        width: 5rem;
+        font-size: 0.7rem;
+        transition: .4s;
+    }   
+}
+
+
+@media only screen and (max-width:431px) {
+    .landing .landing_part_two h2{
+        font-size: 2.3rem;
+        left: 11rem;
+        top: 34rem;
+    }
+}
+
+
+@media only screen and (max-width:391px) {
+
+    .landing .landing_part_two h2{
+        font-size: 1.5rem;
+        left: 11rem;
+        top: 23rem;
+    }
+ 
+
+    .landing .landing_part_two .line_vinyl{
+        height: 6rem;
+    }
+    
+    .landing .landing_part_two .line_vinyl .vinil .albom{
+        margin-right: 0.5rem;
+    }
+
+    .landing .landing_part_two .line_vinyl .vinil .albom img{
+        width: 3rem;
+    }
+
+    .landing .landing_part_two .line_vinyl .vinil .albom h4{
+        font-size: 0.6rem;
+    }   
+}
+
+
+
+
+.footer{
+    margin-top: 4rem;
+    height: 22rem;
+    width: 90%;
+    border-bottom: 1px solid white;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.h3_footer{
+    width: 90%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .links h5{
+    font-size: 2rem;
+    color: white;
+}
+
+.footer .links a{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.4s;
+}
+
+.footer .links a:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: 0.4s;
+}
+
+
+@media only screen and (max-width:471px) {
+    .footer{
+        margin-top: 5rem;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    h3.h3_footer{
+        width: 90%;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .footer .links h5{
+    font-size: 1rem;
+    }
+
+    .footer .links a{
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width:431px) {
+    h3.h3_footer{
+        width: 90%;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:391px) {
+    .footer{
+        margin-top: 3rem;
+    }
+
+    .footer .links h5{
+        font-size: 0.7rem;
+    }
+
+    .footer .links a{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    h3.h3_footer{
+        font-size: 0.6rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
